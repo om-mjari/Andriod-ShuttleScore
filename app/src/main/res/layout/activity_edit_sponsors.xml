@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EditSponsors">
+
+    <!-- Status bar -->
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- AppBar with back and title -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/statusBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Edit Sponsors"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/lblSponsors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="Select Sponsors to Edit"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05" />
+
+    <!-- Already added officials list -->
+    <ListView
+        android:id="@+id/listViewEditSponsors"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/lblSponsors"
+        app:layout_constraintBottom_toTopOf="@id/EditSponsorsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Remove button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/EditSponsorsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Edit"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/baseline_edit_24"
+        app:iconTint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/listViewEditSponsors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white" />
+
+
+    <!-- Remove button -->
+</androidx.constraintlayout.widget.ConstraintLayout>

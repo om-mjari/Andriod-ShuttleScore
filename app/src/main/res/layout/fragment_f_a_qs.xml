@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="10dp" />
+
+        <!-- FAQ 1 (Clickable Layout) -->
+        <LinearLayout
+            android:id="@+id/q1layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="How do I register for ShuttleScore?"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/icon_q1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Expand Answer" />
+        </LinearLayout>
+
+        <!-- Answer Text (Initially Hidden) -->
+        <TextView
+            android:id="@+id/answer_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To register, enter your contact number, and you will receive an SMS verification code. Enter the code to complete your registration."
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- FAQ 2 (Clickable Layout) -->
+        <LinearLayout
+            android:id="@+id/q2layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="How can I organize a new tournament?"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/icon_q2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Expand Answer" />
+        </LinearLayout>
+
+        <!-- Answer Text (Initially Hidden) -->
+        <TextView
+            android:id="@+id/answer_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you are a Tournament Organizer, go to the ''Create Tournament'' section, enter the tournament details, add teams and officials, and set match schedules."
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- FAQ 3 (Clickable Layout) -->
+        <LinearLayout
+            android:id="@+id/q3layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Can I add players after the tournament starts?"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/icon_q3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Expand Answer" />
+        </LinearLayout>
+
+        <!-- Answer Text (Initially Hidden) -->
+        <TextView
+            android:id="@+id/answer_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes, You can add players after tournament organized or started by the organizer. For it you have to click on Add Player option"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- FAQ 4 (Clickable Layout) -->
+        <LinearLayout
+            android:id="@+id/q4layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Can I start match scoring without organizing a tournament?"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/icon_q4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Expand Answer" />
+        </LinearLayout>
+
+        <!-- Answer Text (Initially Hidden) -->
+        <TextView
+            android:id="@+id/answer_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes, You can direct start match scoring without organizing a tournament. For it you have to click on Start Match Scoring option"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+</ScrollView>

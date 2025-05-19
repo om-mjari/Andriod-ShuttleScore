@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40150287270",
+    "project_id": "shuttlescore-7f21b",
+    "storage_bucket": "shuttlescore-7f21b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40150287270:android:16be62a511bae519cd4567",
+        "android_client_info": {
+          "package_name": "com.example.shuttlescore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO1IQLcZo6ek6bgy9cu-wix8TWuhLLuzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

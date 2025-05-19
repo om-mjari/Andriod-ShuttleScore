@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AddSponsors">
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/statusBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Add Sponsors"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/lblAddSponsors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Sponsors"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sponsor Name"
+        app:layout_constraintTop_toBottomOf="@id/lblAddSponsors"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/sponsorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Sponsor Name"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/lblAddSponsors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sponsor Contact No"
+        app:layout_constraintTop_toBottomOf="@id/sponsorName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/contactNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Number"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:padding="12dp"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/sponsorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sponsor Description"
+        app:layout_constraintTop_toBottomOf="@id/contactNo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@id/contactNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewSuggestions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/addSponsorButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Sponsor"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/listViewSuggestions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSponsors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sponsors of the Tournament"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/addSponsorButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewAddedSponsors"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideInset"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/lblSponsors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

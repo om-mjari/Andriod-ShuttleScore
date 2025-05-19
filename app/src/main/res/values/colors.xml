@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="blue">#3F51B5</color>
+    <color name="purple">#6200EE</color>
+    <color name="teal_700">#008080</color>
+    <color name="blue1">#2196F3</color>
+    <color name="blue2">#1976D2</color>
+    <color name="blue3">#448AFF</color>
+
+    <!-- Yellow Theme Colors -->
+    <color name="yellow1">#FFEB3B</color>
+    <color name="yellow2">#FBC02D</color>
+    <color name="yellow3">#FFFF00</color>
+
+    <!-- Green Theme Colors -->
+    <color name="green1">#4CAF50</color>
+    <color name="green2">#388E3C</color>
+    <color name="green3">#69F0AE</color>
+    <color name="dark_green">#1B5E20</color>
+
+
+    <!-- Pink Theme Colors -->
+    <color name="pink1">#E91E63</color>
+    <color name="pink2">#C2185B</color>
+    <color name="pink3">#FF4081</color>
+    <color name="purple_200">#50C2C9</color>
+    <color name="purple_500">#50C2C9</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+
+    <color name="background">#F0F4F3</color>
+    <color name="statusbar">#50C2C9</color>
+    <color name="lavender">#8692f7</color>
+
+    <color name="forgotpassword">#50C2C9</color>
+    <color name="signup">#134B4F</color>
+
+</resources>

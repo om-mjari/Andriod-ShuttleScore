@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpFragment">
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/helpContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:visibility="gone">
+
+        <!-- Horizontal Scrollable Buttons -->
+        <HorizontalScrollView
+            android:layout_marginTop="68dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/tutorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial Video"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <Button
+                    android:id="@+id/basicrules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Rules"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <Button
+                    android:id="@+id/faqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQs"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <Button
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <Button
+                    android:id="@+id/feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share Your Thoughts"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Frame for dynamic content -->
+        <FrameLayout
+            android:id="@+id/frameHelp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <!-- Centered ProgressBar overlay -->
+    <ProgressBar
+        android:id="@+id/helpProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

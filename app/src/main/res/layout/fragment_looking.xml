@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!-- Match status or any item in the right upper corner -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp" />
+
+    <!-- Progress Bar centered in the layout -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Message TextView below the progress bar -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Loading matches..."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ListView for match data -->
+    <ListView
+        android:id="@+id/matchListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/tvMessage"
+        android:dividerHeight="1dp" />
+</RelativeLayout>

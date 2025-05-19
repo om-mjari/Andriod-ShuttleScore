@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Menu Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp">
+
+            <!-- Edit Tournament -->
+            <LinearLayout
+                android:id="@+id/editTournament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_edit_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditTournamentItem"
+                    android:text="Edit Tournament"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Delete Tournament -->
+            <LinearLayout
+                android:id="@+id/deleteTournament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_delete_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DeleteTournamentItem"
+                    android:text="Delete Tournament"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Edit Officials -->
+            <LinearLayout
+                android:id="@+id/editOfficials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_person_add_alt_1_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Officials"
+                    android:id="@+id/AddOfficialsItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Remove Officials -->
+            <LinearLayout
+                android:id="@+id/removeOfficials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_person_remove_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove Officials"
+                    android:id="@+id/RemoveOfficialsItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Delete Schedule -->
+            <LinearLayout
+                android:id="@+id/deleteSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_event_busy_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Schedule"
+                    android:id="@+id/deleteScheduleItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Add Sponsor -->
+            <LinearLayout
+                android:id="@+id/addsponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_add_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Sponsor"
+                    android:id="@+id/AddSponsorsItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Edit Sponsor -->
+            <LinearLayout
+                android:id="@+id/editsponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_edit_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Sponsor"
+                    android:id="@+id/EditSponsorsItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Delete Sponsor -->
+            <LinearLayout
+                android:id="@+id/deletesponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_delete_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Sponsor"
+                    android:id="@+id/DeleteSponsorsItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tournamentFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_feedback_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Give Feedbacks"
+                    android:id="@+id/FeedbacksItem"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

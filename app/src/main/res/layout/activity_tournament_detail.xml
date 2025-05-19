@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_arrow_back_24"
+                        app:tint="?attr/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textViewTournamentName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Tournament"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/menuIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_menu_24"
+                        android:contentDescription="Menu"
+                        android:layout_marginStart="8dp"
+                        android:padding="4dp"
+                        app:tint="?attr/colorPrimary" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewGroundName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ground"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewTournamentLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/placeholder_image" />
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:tabIndicatorFullWidth="false" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- DRAWER MENU (Your menu layout) -->
+    <LinearLayout
+        android:id="@+id/drawerMenu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="24dp"
+        android:paddingHorizontal="8dp"
+        android:clickable="true">
+
+        <!-- You can directly copy your menu layout here (Edit Tournament, Delete, etc.) -->
+        <!-- ... Your menu content here ... -->
+        <!-- Alternatively, you can use <include layout="@layout/menu_layout" /> if it's in a separate XML -->
+        <include layout="@layout/manage_tournament"
+            />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

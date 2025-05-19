@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:backgroundTint="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:strokeColor="#DDDDDD"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Match Status Badge -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/tvMatchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIVE"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#D84315"
+            app:chipBackgroundColor="#FFF3E0"
+            app:chipCornerRadius="12dp"
+            android:layout_gravity="end" />
+
+        <!-- Team Names -->
+        <TextView
+            android:id="@+id/tvTeamNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 1 vs Team 2"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Match Score -->
+        <TextView
+            android:id="@+id/tvMatchScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 0"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#EEEEEE" />
+
+        <!-- View Live Score Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLiveScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Score"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

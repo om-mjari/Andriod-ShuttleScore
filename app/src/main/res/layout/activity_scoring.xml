@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_reset"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/undo"
+            android:contentDescription="Reset" />
+
+    </LinearLayout>
+
+    <!-- Score Box -->
+    <LinearLayout
+        android:id="@+id/score_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/score_box_border"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:id="@+id/team1_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_team1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Team A"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/score_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/score_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"/>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:id="@+id/team2_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/txt_team2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Team B"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/score_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Middle Add Button -->
+    <Button
+        android:id="@+id/btn_add_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#50BFE6"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <!-- Court -->
+    <FrameLayout
+        android:id="@+id/court_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/court_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#004d00"
+            android:orientation="vertical">
+
+            <!-- Top Half -->
+            <LinearLayout
+                android:id="@+id/top_half"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/top_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/top_left_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF" />
+
+                    <View
+                        android:id="@+id/top_left_right_line"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:background="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/txt_top_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+ Add Player"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/top_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/top_right_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/txt_top_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+ Add Player"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Center Net -->
+            <View
+                android:id="@+id/net_line"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#FFFFFF"/>
+
+            <!-- Bottom Half -->
+            <LinearLayout
+                android:id="@+id/bottom_half"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/bottom_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/bottom_left_right_line"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:background="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/txt_bottom_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+ Add Player"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/bottom_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_bottom_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="+ Add Player"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Outer Border -->
+        <View
+            android:id="@+id/court_outer_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/court_border"/>
+    </FrameLayout>
+
+    <!-- Bottom Add Button -->
+    <Button
+        android:id="@+id/btn_add_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#50BFE6"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</LinearLayout>

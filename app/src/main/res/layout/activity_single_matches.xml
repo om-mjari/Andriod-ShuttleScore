@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".SingleMatches">
+
+ <TextView
+     android:id="@+id/lblmatchdetails"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Match Details"
+     android:textSize="24sp"
+     android:textStyle="bold"
+     android:textColor="@android:color/black"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <TextView
+     android:id="@+id/txtmatchformat"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="12dp"
+     android:layout_marginTop="108dp"
+     android:text="Match Format"
+     android:textSize="16sp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/lblmatchdetails" />
+
+ <Spinner
+     android:id="@+id/matchFormat"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/txtmatchformat"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <TextView
+     android:id="@+id/txttosswinner"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Toss Winner"
+     android:textSize="16sp"
+     app:layout_constraintTop_toBottomOf="@id/matchFormat"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_marginTop="24dp" />
+
+ <Spinner
+     android:id="@+id/tossWinner"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/txttosswinner"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <TextView
+     android:id="@+id/txtchoice"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Toss Choice"
+     android:textSize="16sp"
+     app:layout_constraintTop_toBottomOf="@id/tossWinner"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_marginTop="24dp" />
+
+ <Spinner
+     android:id="@+id/choice"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/txtchoice"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <TextView
+     android:id="@+id/txtpoints"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Total Points"
+     android:textSize="16sp"
+     app:layout_constraintTop_toBottomOf="@id/choice"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_marginTop="24dp" />
+
+ <Spinner
+     android:id="@+id/points"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/txtpoints"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <Button
+     android:id="@+id/btnstart"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="80dp"
+     android:background="@drawable/rounded_button"
+     android:text="START"
+     android:textAllCaps="false"
+     android:textColor="@android:color/white"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/points" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

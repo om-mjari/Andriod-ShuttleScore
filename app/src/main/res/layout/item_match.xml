@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/txtTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player1 vs Player2"
+        android:textSize="15sp"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/txtMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singles | 11 pts"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Format: 3 Sets"
+        android:textSize="14sp"
+        android:textColor="#777777" />
+</LinearLayout>

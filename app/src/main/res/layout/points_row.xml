@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTeamName"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Team"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtPlayed"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingStart="10dp" /> <!-- Added padding to the left -->
+
+    <TextView
+        android:id="@+id/txtWins"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingStart="10dp" /> <!-- Added padding to the left -->
+
+    <TextView
+        android:id="@+id/txtLosses"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingStart="10dp" /> <!-- Added padding to the left -->
+</LinearLayout>

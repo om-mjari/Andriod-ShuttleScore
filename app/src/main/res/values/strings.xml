@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">ShuttleScore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="hand_preference_array">
+        <item>Right-Handed</item>
+        <item>Left-Handed</item>
+    </string-array>
+    <string name="open_nav">open Navigation Drawer</string>
+    <string name="close_nav">close Navigation Drawer</string>
+
+    <string-array name="tournament_categories">
+        <item>Select Category</item>
+        <item>Open</item>
+        <item>Corporate</item>
+        <item>Community</item>
+        <item>School</item>
+        <item>Other</item>
+        <item>Series</item>
+        <item>College</item>
+        <item>University</item>
+    </string-array>
+
+    <string-array name="shuttlecock_types">
+        <item>Select Shuttlecock Type</item>
+        <item>Feather</item>
+        <item>Plastic</item>
+    </string-array>
+
+    <string-array name="singles_doubles">
+        <item>Select SinglesDoubles</item>
+        <item>Singles</item>
+        <item>Doubles</item>
+    </string-array>
+
+    <string-array name="server_options">
+        <item>Player 1</item>
+        <item>Player 2</item>
+    </string-array>
+
+    <string-array name="court_options">
+        <item>Left Court</item>
+        <item>Right Court</item>
+    </string-array>
+
+    <string-array name="choice_options">
+        <item value="serve">Serve</item>
+        <item value="court">Court</item>
+    </string-array>
+
+    <string-array name="points_options">
+        <item value="7">7</item>
+        <item value="11">11</item>
+        <item value="21">21</item>
+    </string-array>
+
+    <string-array name="matchformat_options">
+        <item value="1">Single Round</item>
+        <item value="3">Best of 3</item>
+    </string-array>
+
+    <string-array name="match_type_array">
+        <item>League Match</item>
+        <item>Qualifier</item>
+        <item>Semifinal</item>
+        <item>Final</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtMatchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="League"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txtTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1"
+        android:layout_below="@id/txtMatchType"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vs"
+        android:layout_below="@id/txtTeam1"
+        android:layout_alignStart="@id/txtTeam1"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2"
+        android:layout_below="@id/vs"
+        android:layout_alignStart="@id/vs"
+        android:layout_marginTop="4dp" />
+
+</RelativeLayout>

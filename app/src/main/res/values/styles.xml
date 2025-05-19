@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base App Theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryDark">@color/blue2</item>
+        <item name="colorAccent">@color/blue3</item>
+        <item name="android:textColorPrimary">@color/blue3</item>
+    </style>
+
+    <style name="YellowTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#FF5722</item>
+        <item name="colorAccent">#FF9800</item>
+        <item name="android:textColorPrimary">#FF9800</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green1</item>
+        <item name="colorPrimaryDark">@color/green2</item>
+        <item name="colorAccent">@color/green1</item>
+        <item name="android:textColorPrimary">@color/green1</item>
+    </style>
+
+    <style name="PinkTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pink1</item>
+        <item name="colorPrimaryDark">@color/pink2</item>
+        <item name="colorAccent">@color/pink3</item>
+        <item name="android:textColorPrimary">@color/pink3</item>
+    </style>
+
+</resources>

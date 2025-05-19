@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    tools:context=".Login">
+
+    <View
+        android:id="@+id/floatingCircle1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle_background"
+        android:alpha="0.1"
+        app:layout_constraintBottom_toTopOf="@id/loginframe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="LOGIN"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnsendotp"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="44dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                app:iconGravity="start"
+                app:iconPadding="8dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/etxtcontact"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="32dp" />
+
+            <TextView
+                android:id="@+id/txtregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Don't have an account? Register!"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnsendotp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact No"
+                android:layout_marginTop="52dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/txttitle"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="32dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/loginframe"
+        android:layout_width="410dp"
+        android:layout_height="290dp"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

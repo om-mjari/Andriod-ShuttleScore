@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Status Bar Color Strip -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="?attr/colorPrimary" />
+
+    <!-- AppBar with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:contentDescription="Back"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Schedule Match"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Select a team to play against *"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Side-by-side team layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/teamAIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@android:drawable/ic_input_add"
+                        android:background="@drawable/circle_background"
+                        android:padding="20dp" />
+
+                    <Button
+                        android:id="@+id/selectTeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT TEAM A"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_button"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VS"
+                    android:textSize="18sp"
+                    android:textColor="#444"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/teamBIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@android:drawable/ic_input_add"
+                        android:background="@drawable/circle_background"
+                        android:padding="20dp" />
+
+                    <Button
+                        android:id="@+id/selectTeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT TEAM B"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_button"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Game Points"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:textColor="?attr/colorPrimary" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton android:id="@+id/radio7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" />
+                <RadioButton android:id="@+id/radio11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11" />
+                <RadioButton android:id="@+id/radio21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Match Type"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:textColor="?attr/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerMatchType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:entries="@array/match_type_array" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Sets"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:textColor="?attr/colorPrimary" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton android:id="@+id/radio1Set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 Set" />
+                <RadioButton android:id="@+id/radio3Sets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 Sets" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnschedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

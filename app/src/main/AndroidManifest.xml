@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon"
+        android:label="Shuttle Score"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShuttleScore"
+        tools:targetApi="31">
+        <activity
+            android:name=".tournamentscoring"
+            android:exported="false" />
+        <activity
+            android:name=".TournamentTeams"
+            android:exported="false" />
+        <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".scoring"
+            android:exported="false" />
+        <activity
+            android:name=".addmatchfinal"
+            android:exported="false" />
+        <activity
+            android:name=".SingleMatches"
+            android:exported="false" />
+        <activity
+            android:name=".searchplayer"
+            android:exported="false" />
+        <activity
+            android:name=".AddTournament"
+            android:exported="false" />
+        <activity
+            android:name=".Singles"
+            android:exported="false" />
+        <activity
+            android:name=".TeamMatchDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSponsors"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveSponsors"
+            android:exported="false" />
+        <activity
+            android:name=".AddSponsors"
+            android:exported="false" />
+        <activity
+            android:name=".EditTournaments"
+            android:exported="false" />
+        <activity
+            android:name=".newAddTeamsss"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".otp"
+            android:exported="false" />
+        <activity
+            android:name=".MatchDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveOfficials"
+            android:exported="false" />
+        <activity
+            android:name=".AddOfficials"
+            android:exported="false" />
+        <activity
+            android:name=".viewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".TournamentFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".MatchDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateDoubleTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDoubleTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NetworkChangeReceiver"
+            android:exported="false" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doubles"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TournamentDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

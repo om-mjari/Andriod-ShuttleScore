@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidx="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".FeedbackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We Value Your Feedback!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let us know your experience using ShuttleScore"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:progressTint="?attr/colorPrimary"
+            android:isIndicator="false"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/feedbackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your feedback here..."
+            android:background="@drawable/rounded_edittext"
+            android:textSize="16sp"
+            android:textColor="?attr/colorPrimary"
+            android:padding="12dp"
+            android:minHeight="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/submitFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Submit Feedback"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/lavender"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

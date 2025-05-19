@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/basicrules"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏸 Basic Rules of Badminton"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"/>
+
+        <!-- Match Format -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Match Format And Game Duration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Best of Three (3) Games\n✔️ Each Game is Played to 21 Points\n✔️ Players switch sides after each game\n✔️ If the score reaches 20-20, a player must lead by 2 points to win\n✔️ Maximum score: 30-29"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Scoring System -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Scoring System And Points"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Rally scoring system – Every rally gives a point\n✔️ Winning a rally scores 1 point\n✔️ Losing a rally gives a point to the opponent\n✔️ If the shuttle lands out, you lose a point"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Singles vs Doubles -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Singles vs. Doubles Rules"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Singles uses a narrow court, and doubles uses a wider court\n✔️ Serve must be diagonal\n✔️ Doubles players must alternate hitting the shuttle"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Serving Rules -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4️. Serving Rules"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Serve must be below the waist\n✔️ Racket must be pointing downward\n✔️ If the serve lands outside, the opponent gets the point"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Switching Sides -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5️. Switching Sides And Intervals"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Players switch sides after each game\n✔️ In Game 3, players switch sides at 11 points\n✔️ 60-second break at 11 points, 2-minute break between games"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Penalties -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6️. Penalties And Faults"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Touching the net is a fault\n✔️ Hitting the shuttle out of bounds is a fault\n✔️ Double hit (hitting the shuttle twice) is a fault\n✔️ Yellow Card – Warning for minor misconduct\n✔️ Red Card – Serious misconduct, possible disqualification"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Special Situations -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7️. Let Calls And Special Situations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ A let is called if a player was not ready for serve\n✔️ If an outside object enters the court, a let is called\n✔️ If a shuttle gets stuck in the net after crossing, a let is called"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"/>
+
+        <!-- Equipment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8️. Equipment And Court Dimensions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:paddingTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Singles Court: 5.18m wide × 13.4m long\n✔️ Doubles Court: 6.1m wide × 13.4m long\n✔️ Net height: 1.55m at edges, 1.524m at center\n✔️ Racket size: Max length 68cm, width 23cm\n✔️ Shuttle weight: 4.74g – 5.50g"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"
+            android:paddingBottom="100dp"/>
+
+    </LinearLayout>
+</ScrollView>

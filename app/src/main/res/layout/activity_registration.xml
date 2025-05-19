@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regimain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    tools:context=".Registration">
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:backgroundTint="#7C3AED"
+        android:alpha="0.1"
+        android:layout_marginTop="-100dp"
+        android:layout_marginStart="-150dp"
+        android:rotation="45"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="368dp"
+        android:layout_height="659dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="SIGN UP"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reginame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regicontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Contact Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regiemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regiaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Gender"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rggender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbmale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rbfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+
+                <!-- Playing Hand -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Playing Hand"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/regihandpreference"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="12dp" />
+
+                <!-- Date of Birth -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Date of Birth"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/regidob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="24dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select DOB"
+                    android:padding="12dp" />
+
+                <!-- Register Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/regibtnregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="REGISTER"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:cornerRadius="12dp"
+                    app:iconGravity="start"
+                    app:iconPadding="8dp"
+                    app:iconTint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/regilogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:text="Already have an account? Login"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="-90dp"
+        android:layout_marginBottom="50dp"
+        android:alpha="0.09"
+        android:backgroundTint="#F59E0B"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:rotation="-20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/regiframe"
+        android:layout_width="410dp"
+        android:layout_height="290dp"
+        android:alpha="0.2"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"/>
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:backgroundTint="#3B82F6"
+        android:alpha="0.12"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="-120dp"
+        android:rotation="30"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

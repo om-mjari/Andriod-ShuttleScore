@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/contact_layout"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Contact Item Template -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/phoneLayout"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/imgcontact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 7874426640"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:id="@+id/emailLayout"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/imggmail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shuttlescoreofficial@gmail.com"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instagramLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/imginstagram" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shuttle_Score_Official"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:id="@+id/facebookLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/imgfacebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shuttle_score"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
